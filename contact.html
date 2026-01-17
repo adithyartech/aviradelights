@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Avira Delights</title>
+  <meta name="description" content="Contact Avira Delights for Idli/Dosa batter, millet products, masalas and organic oils. Phone: 8148599239 / 8072669046" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Avira Delights Logo" />
+      <div>
+        <h1>Avira Delights</h1>
+        <span>Pure • Fresh • Traditional</span>
+      </div>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+
+    <nav class="links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Our Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h3>Contact Us</h3>
+    <p class="sub">For orders, wholesale supply, hotels, catering and bulk events.</p>
+
+    <div class="grid3">
+      <div class="card">
+        <h4>Phone</h4>
+        <p style="margin-top:10px"><b>8148599239</b></p>
+        <p style="margin-top:6px"><b>8072669046</b></p>
+      </div>
+
+      <div class="card">
+        <h4>WhatsApp Orders</h4>
+        <p style="margin-top:10px">Tap below to order directly</p>
+        <div class="cta" style="margin-top:12px">
+          <a class="btn primary" target="_blank"
+             href="https://wa.me/918148599239?text=Hello%20Avira%20Delights%2C%20I%20want%20to%20place%20an%20order.">
+            Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Email</h4>
+        <p style="margin-top:10px">
+          <a href="mailto:feedback@aviradelights.com"><b>feedback@aviradelights.com</b></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="grid2" style="margin-top:18px">
+      <div class="card">
+        <h4>Send an enquiry</h4>
+        <p class="small" style="margin-top:6px">
+          This form will open your email app. You can also WhatsApp directly.
+        </p>
+
+        <form class="form" onsubmit="return sendMail();">
+          <input id="name" type="text" placeholder="Your Name" required />
+          <input id="phone" type="tel" placeholder="Phone Number" required />
+          <textarea id="msg" placeholder="Your message / order details" required></textarea>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h4>Service Areas</h4>
+        <p style="margin-top:10px">
+          We cater to retail and wholesale customers, hotels, caterers, street food vendors,
+          and bulk event orders.
+        </p>
+
+        <p style="margin-top:12px">
+          <b>Delivery:</b> Based on location and bulk quantity.
+        </p>
+
+        <p style="margin-top:12px" class="small">
+          (You can update this section later with exact city/areas.)
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div>
+        <b>Avira Delights</b>
+        <div class="small">Pure • Fresh • Traditional</div>
+      </div>
+      <div class="small">© <span id="y"></span> Avira Delights</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("y").innerText = new Date().getFullYear();
+
+  function sendMail(){
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const msg = document.getElementById("msg").value.trim();
+
+    const subject = encodeURIComponent("Enquiry / Order - Avira Delights");
+    const body = encodeURIComponent(
+      `Name: ${name}\nPhone: ${phone}\n\nMessage:\n${msg}`
+    );
+
+    window.location.href = `mailto:feedback@aviradelights.com?subject=${subject}&body=${body}`;
+    return false;
+  }
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

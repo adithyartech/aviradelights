@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Avira Delights</title>
+  <meta name="description" content="About Avira Delights - Traditional, hygienic idli/dosa batter, masalas, millet products and organic oils." />
+  <meta name="theme-color" content="#184d2b" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Avira Delights Logo" />
+      <div>
+        <h1>Avira Delights</h1>
+        <span>Pure • Fresh • Traditional</span>
+      </div>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+
+    <nav class="links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Our Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+
+    <h3 class="reveal delay-1">About Us</h3>
+    
+    <div class="tabs reveal delay-3">
+      <button class="tab-btn active" onclick="openTab('tab-en', this)">English</button>
+      <button class="tab-btn" onclick="openTab('tab-ta', this)">தமிழ்</button>
+    </div>
+
+    <!-- English -->
+    <div id="tab-en" class="tab-panel active">
+      <div class="card">
+        
+        <p>
+          At Avira, we are committed to delivering purity, taste, and wellness through our wide range of traditional
+          and natural products. We specialize in preparing fresh and hygienic Idli & Dosa batter, made using carefully
+          selected rice, premium urad dal, millets, and purified water. Our batters are prepared using modern hygienic
+          grinding methods while preserving natural fermentation to ensure soft idlis and crispy, flavorful dosas.
+        </p>
+
+        <p style="margin-top:12px">
+          In addition to batter, Avira offers a wholesome range of traditional masalas, millet-based batters, millet
+          dry flours, and cold-pressed organic oils for hair and body care. Each product is made with high-quality
+          ingredients, free from harmful chemicals and preservatives, ensuring both nutrition and safety. Our food
+          products are made using carefully selected grains, millets, spices, and natural ingredients, processed under
+          hygienic conditions to preserve authentic taste, aroma, and nutritional value. Our organic oils are
+          traditionally extracted to retain their natural properties, promoting healthy hair, skin, and overall well-being.
+        </p>
+
+        <p style="margin-top:12px">
+          We proudly cater to retail customers, wholesale markets, hotels, caterers, street food vendors, and bulk
+          event orders, delivering consistent quality, hygienic packaging, and timely service.
+        </p>
+
+        <p style="margin-top:12px">
+          Rooted in tradition and driven by quality, Avira aims to become a trusted household and commercial brand for
+          healthy food solutions and natural lifestyle products.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tamil -->
+    <div id="tab-ta" class="tab-panel">
+      <div class="card">
+        
+
+        <p>
+          அவிரா நிறுவனத்தில், சுத்தம், சுவை மற்றும் ஆரோக்கியத்தை முதன்மையாகக் கொண்டு இயற்கை முறையில் தயாரிக்கப்பட்ட உயர்தர
+          உணவு மற்றும் உடல் பராமரிப்பு பொருட்களை வழங்குகிறோம். சிறந்த தரமான அரிசி, உளுந்து, சிறுதானியங்கள் மற்றும்
+          சுத்திகரிக்கப்பட்ட நீரை பயன்படுத்தி சுகாதார முறையில் தயாரிக்கப்படும் இட்லி மற்றும் தோசை மாவு எங்கள் சிறப்பு.
+        </p>
+
+        <p style="margin-top:12px">
+          இதுடன், பாரம்பரிய மசாலா பொருட்கள், சிறுதானிய மாவுகள், சிறுதானிய உலர் மாவுகள் மற்றும் தலைமுடி & உடல்
+          பராமரிப்பிற்கான இயற்கை எண்ணெய்கள் ஆகியவற்றையும் வழங்குகிறோம். எங்கள் அனைத்து பொருட்களும் ரசாயனங்கள் மற்றும்
+          செயற்கை பாதுகாப்பு சேர்க்கைகள் இன்றி, இயற்கையான முறையில் தயாரிக்கப்படுகின்றன.
+        </p>
+
+        <p style="margin-top:12px">
+          சில்லறை விற்பனை, மொத்த விற்பனை, ஹோட்டல்கள், கேட்டரிங் சேவைகள், வீதி உணவகங்கள் மற்றும் விழா ஆர்டர்கள் என அனைத்து
+          தேவைகளுக்கும் ஒரே தரத்தில், சுத்தமான பேக்கிங் மற்றும் நேர்த்தியான விநியோகத்தை உறுதி செய்கிறோம்.
+        </p>
+
+        <p style="margin-top:12px">
+          பாரம்பரியத்தின் நம்பகத்தன்மையும், தரத்தின் உறுதியும் கொண்ட அவிரா, ஆரோக்கியமான உணவுக்கும் இயற்கை வாழ்க்கை முறைக்கும்
+          உங்கள் நம்பிக்கைக்குரிய துணை நிறுவனம் ஆகும்.
+        </p>
+      </div>
+    </div>
+
+    <div class="cta reveal delay-4" style="margin-top:22px">
+      <a class="btn primary" href="products.html">Explore Products</a>
+      <a class="btn secondary" href="contact.html">Contact for Orders</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div>
+        <b>Avira Delights</b>
+        <div class="small">Pure • Fresh • Traditional</div>
+      </div>
+      <div class="small">© <span id="y"></span> Avira Delights</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("y").innerText = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
